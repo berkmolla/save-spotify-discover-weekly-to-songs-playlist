@@ -14,9 +14,9 @@ var request = require('request'); // "Request" library
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 
-var client_id = '3346442747654d92a07c2534c365d657'; // Your client id
-var client_secret = '51557cadd0df4d94959dfec82307182e'; // Your secret
-var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
+var client_id = 'CLIENT_ID'; // Your client id
+var client_secret = 'CLIENT_SECRET'; // Your secret
+var redirect_uri = 'http://localhost:8888/callback';
 var baseUrl = 'https://api.spotify.com';
 
 let playlistTracksLink = '';
