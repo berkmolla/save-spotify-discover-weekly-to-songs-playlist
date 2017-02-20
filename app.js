@@ -9,13 +9,15 @@
 
 "use strict";
 
+
+var keys = require('./keys.json');
 var express = require('express'); // Express web server framework
 var request = require('request'); // "Request" library
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 
-var client_id = 'CLIENT_ID'; // Your client id
-var client_secret = 'CLIENT_SECRET'; // Your secret
+var client_id = keys.clientId; // Your client id
+var client_secret = keys.clientSecret; // Your secret
 var redirect_uri = 'http://localhost:8888/callback';
 var baseUrl = 'https://api.spotify.com';
 
